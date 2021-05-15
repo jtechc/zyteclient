@@ -1,5 +1,8 @@
 lockfileVersion: 5.3
 
+neverBuiltDependencies:
+  - fsevents
+
 specifiers:
   colors: ^1.4.0
   discord.js: ^12.5.3

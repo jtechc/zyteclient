@@ -1,6 +1,8 @@
 const { connect } = require('mongoose');
 const mongoURI = process.env.MONGO_URI;
+const colors = require('colors');
 
+/** @param {string} mongoURI */
 module.exports = async () => {
     await connect(mongoURI, {
     useNewUrlParser: true,
@@ -8,8 +10,9 @@ module.exports = async () => {
     useFindAndModify: false,
     keepAlive: true,
   },
-    (err) => {
-      if (err) throw err;
+    (e) => {
+      if (e) throw e;
+      else console.log(`${colors.zebra('-DATABASE CONNECTED-')}`)
     }
   );
-}
+};
