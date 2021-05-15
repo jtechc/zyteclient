@@ -1,6 +1,6 @@
 {
   "name": "zytesas.dch",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Just another discord.js command handler that looks no differernt than the rest.",
   "main": "./src/app",
   "publishConfig": {
