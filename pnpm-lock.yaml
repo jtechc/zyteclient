@@ -9,12 +9,14 @@ specifiers:
   dotenv: ^9.0.2
   mongoose: ^5.12.9
   nodemon: ^2.0.7
+  zytesas.dch: ^1.0.6
 
 dependencies:
   colors: 1.4.0
   discord.js: 12.5.3
   dotenv: 9.0.2
   mongoose: 5.12.9
+  zytesas.dch: 'link:'
 
 devDependencies:
   nodemon: 2.0.7
