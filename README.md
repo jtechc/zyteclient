@@ -2,11 +2,13 @@
 
 An annoyingly average discord.js command handler that is very work in progress.
 
-> Not really sure what to put here but GH told me to make one
-> kind of omega sus.
-
-## Note: Due to popular demand, the constructor is defined as ZyteClient, while the package name and the extended
-## Client instance of discord.js is defined as zyteclient.  I am real smart.
+> ##          Note
+> 
+> #### Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
+>
+> ##### ZyteClient: Class; zyteClient: extended Class; zyteclient: package name
+>
+> ##          Good luck!
 
 `ZyteClient` class is where your initial loading will take place.
 
@@ -15,7 +17,7 @@ An annoyingly average discord.js command handler that is very work in progress.
 
 ```javascript
 require('dotenv').config();
-const { Discord } = require('discord.js');
+const { Client } = require('discord.js');
 const { ZyteClient } = require('zyteclient');
 
 const client = new Client();
@@ -25,7 +27,7 @@ const client = new Client();
 
 ```javascript
 client.on('ready', () => {
-  //passing in the client parameter, and options object as the...
+  //passing in the zyteClient parameter, and options object...
   new ZyteClient(client, {
 
     /** both commandsDirectory and eventsDirectory
@@ -75,7 +77,7 @@ module.exports = new CommandConstructor({
 The three parameters that each command can take are:
 * message: Message
 * args: Command arguments after the command name [0]
-* client: instance of the zyteclient class
+* client: `instanceof @extends Client` (discord.js)
 
 ## Installation
 
