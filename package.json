@@ -2,9 +2,9 @@
   "name": "zytesas.dch",
   "version": "1.0.2",
   "description": "Just another discord.js command handler that looks no differernt than the rest.",
-  "main": "/src/app.js",
+  "main": "./src/app",
   "publishConfig": {
-    "main": "/src/app.js"
+    "main": "./src/app"
   },
   "pnpm": {
     "neverBuiltDependencies": [

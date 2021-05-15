@@ -18,11 +18,11 @@ const { zytesasdch } = require('zytesas.dch');
 const client = new Client();
 ```
 
-## Then new constructor on your <client>.on('ready') event
+## Then new constructor on your client.on('ready') event
 
 ```javascript
 client.on('ready', () => {
-  //passing in the client parameter, and options object...
+  //passing in the client parameter, and options object as the...
   new zytesasdch(client, {
 
     /** both commandsDirectory and eventsDirectory
