@@ -2,13 +2,14 @@
   "name": "zytesas.dch",
   "version": "1.0.0",
   "description": "Just another discord.js command handler that looks no differernt than the rest.",
-  "main": "/src/app.js"
-,
+  "main": "/src/app.js",
   "publishConfig": {
     "main": "/src/app.js"
   },
   "pnpm": {
-    "neverBuiltDependencies": ["fsevents"]
+    "neverBuiltDependencies": [
+      "fsevents"
+    ]
   },
   "scripts": {
     "test": "nodemon src/app.js"
@@ -23,5 +24,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zytesas/zytesasdch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zytesas/zytesasdch/issues"
+  },
+  "homepage": "https://github.com/Zytesas/zytesasdch#readme"
 }
