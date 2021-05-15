@@ -1,6 +1,6 @@
 {
   "name": "zyteclient",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Just another discord.js command handler that looks no differernt than the rest.",
   "main": "./src/app",
   "publishConfig": {
