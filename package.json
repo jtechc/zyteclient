@@ -1,5 +1,5 @@
 {
-  "name": "zytesas.dch",
+  "name": "zytesasdch",
   "version": "1.0.7",
   "description": "Just another discord.js command handler that looks no differernt than the rest.",
   "main": "./src/app",
