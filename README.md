@@ -2,13 +2,13 @@
 
 An annoyingly average discord.js command handler that is very work in progress.
 
-> ##          Note
+> ##Note
 > 
-> #### Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
->
-> ##### ZyteClient: Class; zyteClient: extended Class; zyteclient: package name
->
-> ##          Good luck!
+> #Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
+
+  `ZyteClient`: Class; `zyteClient`: instanceof @extends Discord.Client; `zyteclient`: package name
+
+ ## Good luck!
 
 `ZyteClient` class is where your initial loading will take place.
 
@@ -52,7 +52,7 @@ client.on('ready', () => {
 Ideally..
 #### File loader will load any folders/files within the specified commandsDirectory and eventsDirectory.
 
-Then require the CommandConstructor and you have some required and optional properties.
+Then require the `CommandConstructor` and you have some required/optional properties.
 
 ```javascript
 //top of ping.js
@@ -75,15 +75,17 @@ module.exports = new CommandConstructor({
 });
 ```
 The three parameters that each command can take are:
-* message: Message
-* args: Command arguments after the command name [0]
-* client: `instanceof @extends Client` (discord.js)
+* `message`: Message
+* `args`: Command arguments after the command name [0]
+* `client`: `instanceof @extends Client` (discord.js)
 
 ## Installation
+
 
 ```
 npm i zyteclient
 ```
+
 
 ## License
 
