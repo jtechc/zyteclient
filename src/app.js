@@ -1,15 +1,15 @@
 require('dotenv').config();
 const { Client, Collection } = require('discord.js');
-const { zyteclient } = require('./BaseTemplates/zyteclient');
+const { zyteClient } = require('./BaseTemplates/zyteClient');
 const LoadEvents = require('./Loaders/LoadEvents');
 const LoadCommands = require('./Loaders/LoadCommands');
 const mongo = require('./dbConnections/mongo');
 const colors = require("colors");
 
-class zytesasdch {
+class ZyteClient {
   /**
    * @private
-   * @type {zyteclient}
+   * @type {zyteClient}
    */
   _client;
   /**
@@ -131,6 +131,6 @@ class zytesasdch {
   }
 }
 
-module.exports.zytesasdch = zytesasdch;
+module.exports.ZyteClient = ZyteClient;
 module.exports.EventConstructor = require('./BaseTemplates/EventConstructor');
 module.exports.CommandConstructor = require('./BaseTemplates/CommandConstructor');

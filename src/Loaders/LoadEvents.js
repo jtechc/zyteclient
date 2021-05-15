@@ -1,11 +1,11 @@
 const { lstatSync, existsSync, readdirSync, mkdirSync } = require('fs');
 const { join } = require('path');
-const { zyteclient } = require('../BaseTemplates/zyteclient');
+const { zyteClient } = require('../BaseTemplates/zyteClient');
 const EventConstructor = require('../BaseTemplates/EventConstructor');
 
 /**
  * @param {string} eventsFolder
- * @param {zyteclient} client
+ * @param {zyteClient} client
  */
 async function LoadEvents(eventsFolder, client) {
   let numberOfEvents = 0;

@@ -3,7 +3,7 @@ const { Collection, Client } = require('discord.js');
 /**
  * @extends {Client}
  */
-class zyteclient extends Client {
+class zyteClient extends Client {
   /** @type {Collection<string, import('./CommandConstructor')>} */
   commands;
   /** @type {Collection<string, string>} */
@@ -18,4 +18,4 @@ class zyteclient extends Client {
   writeOnDatabase;
 }
 
-module.exports.zyteclient = zyteclient;
+module.exports.zyteClient = zyteClient;

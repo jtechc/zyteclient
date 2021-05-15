@@ -1,4 +1,4 @@
-const { zyteclient } = require('./zyteclient');
+const { zyteclient } = require('./zyteClient');
 const { Message } = require('discord.js');
 
 

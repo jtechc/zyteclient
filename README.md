@@ -1,11 +1,14 @@
-# zytesasdch
+# zyteclient
 
 An annoyingly average discord.js command handler that is very work in progress.
 
 > Not really sure what to put here but GH told me to make one
 > kind of omega sus.
 
-`zytesasdch` class is where your initial loading will take place.
+## Note: Due to popular demand, the constructor is defined as ZyteClient, while the package name and the extended
+## Client instance of discord.js is defined as zyteclient.  I am real smart.
+
+`ZyteClient` class is where your initial loading will take place.
 
 ## Require --- Deconstruct
 
@@ -13,7 +16,7 @@ An annoyingly average discord.js command handler that is very work in progress.
 ```javascript
 require('dotenv').config();
 const { Discord } = require('discord.js');
-const { zytesasdch } = require('zytesas.dch');
+const { ZyteClient } = require('zyteclient');
 
 const client = new Client();
 ```
@@ -23,7 +26,7 @@ const client = new Client();
 ```javascript
 client.on('ready', () => {
   //passing in the client parameter, and options object as the...
-  new zytesasdch(client, {
+  new ZyteClient(client, {
 
     /** both commandsDirectory and eventsDirectory
      *  can have whatever name you want.  If the directory specified 
@@ -51,7 +54,7 @@ Then require the CommandConstructor and you have some required and optional prop
 
 ```javascript
 //top of ping.js
-const { CommandConstructor } = require('zytesasdch');
+const { CommandConstructor } = require('zyteclient');
 
 module.exports = new CommandConstructor({
   name: 'ping',
@@ -72,12 +75,12 @@ module.exports = new CommandConstructor({
 The three parameters that each command can take are:
 * message: Message
 * args: Command arguments after the command name [0]
-* client: instance of the zyteClient class
+* client: instance of the zyteclient class
 
 ## Installation
 
 ```
-npm i zytesas.dch
+npm i zyteclient
 ```
 
 ## License

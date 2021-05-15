@@ -1,4 +1,4 @@
-const { zyteclient } = require('./zyteclient');
+const { zyteclient } = require('./zyteClient');
 /**
  * @template {keyof import('discord.js').ClientEvents} str
  */

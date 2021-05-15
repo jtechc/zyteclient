@@ -3,8 +3,8 @@ const CommandConstructor = require('../BaseTemplates/CommandConstructor');
 const { lstatSync, existsSync, readdirSync, mkdirSync } = require('fs');
 /**
  * @param {string} commandsDirectory
- * @param {import('../BaseTemplates/zyteclient').zyteclient} client
- * @returns {import('../BaseTemplates/zyteclient').zyteclient}
+ * @param {import('../BaseTemplates/zyteClient').zyteClient} client
+ * @returns {import('../BaseTemplates/zyteClient').zyteClient}
  */
 async function LoadCommands(commandsDirectory, client) {
   if (!existsSync(join(require.main.path, commandsDirectory))) {
