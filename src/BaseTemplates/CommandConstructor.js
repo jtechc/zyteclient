@@ -1,4 +1,3 @@
-const c = require('ansi-colors');
 const { zyteclient } = require('./zyteclient');
 const { Message } = require('discord.js');
 

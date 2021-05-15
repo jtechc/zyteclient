@@ -3,7 +3,6 @@ const { Client, Collection } = require('discord.js');
 const { zyteclient } = require('./BaseTemplates/zyteclient');
 const LoadEvents = require('./Loaders/LoadEvents');
 const LoadCommands = require('./Loaders/LoadCommands');
-const PREFIX = process.env.PREFIX;
 const mongo = require('./dbConnections/mongo');
 const colors = require("colors");
 
