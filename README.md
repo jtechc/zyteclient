@@ -2,9 +2,9 @@
 
 An annoyingly average discord.js command handler that is very work in progress.
 
-> ##Note
+> ## Note
 > 
-> #Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
+> # Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
 
   `ZyteClient`: Class; `zyteClient`: instanceof @extends Discord.Client; `zyteclient`: package name
 
@@ -81,11 +81,9 @@ The three parameters that each command can take are:
 
 ## Installation
 
-
 ```
 npm i zyteclient
 ```
-
 
 ## License
 
