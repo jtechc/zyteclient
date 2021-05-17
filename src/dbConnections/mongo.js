@@ -2,7 +2,7 @@ const { connect } = require('mongoose');
 const colors = require('colors');
 
 /**@param {string} mongoURI */
-module.exports = async () => {
+module.exports = async (mongoURI) => {
   await connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
