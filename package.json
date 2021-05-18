@@ -14,7 +14,10 @@
   "scripts": {
     "test": "nodemon src/app.js"
   },
-  "author": "Zytesas",
+  "contributors": [
+    "jtechc",
+    "Zytesas"
+  ],
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
@@ -27,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zytesas/zytesasdch.git"
+    "url": "git+https://github.com/jtechc/zyteclient.git"
   },
   "bugs": {
-    "url": "https://github.com/Zytesas/zytesasdch/issues"
+    "url": "https://github.com/jtechc/zyteclient/issues"
   },
-  "homepage": "https://github.com/Zytesas/zytesasdch#readme"
+  "homepage": "https://github.com/jtechc/zyteclient#readme"
 }
