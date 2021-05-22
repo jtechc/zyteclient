@@ -4,11 +4,11 @@ An annoyingly average discord.js command handler that is very work in progress.
 
 > ## Note
 > 
-> ###### Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
-
-  `ZyteClient`: Class; `zyteClient`: instanceof @extends Discord.Client; `zyteclient`: package name
-
- ## Good luck!
+> ##### Due to the raging popular demand, I've decided to ship the command in a super nifty way (sound familiar?)
+>
+> `ZyteClient`: Class; `zyteClient`: instanceof @extends Discord.Client; `zyteclient`: package name
+>
+> ### Good luck!
 
 `ZyteClient` class is where your initial loading will take place.
 
@@ -27,8 +27,7 @@ const client = new Client();
 
 ```javascript
 client.on('ready', () => {
-  //passing in the zyteClient parameter, and options object...
-  new ZyteClient(client, {
+  new ZyteClient(client, {   //passing in the client (zyteClient instance) parameter, and options object...
 
     /** both commandsDirectory and eventsDirectory
      *  can have whatever name you want.  If the directory specified 
@@ -39,13 +38,13 @@ client.on('ready', () => {
     eventsDirectory: 'events',
     ownerId: [' '],
     prefix: '%',
-    mongoURI: process.env.MONGOURI,
+    mongoURI: `${process.env.MONGOURI}`,    // defined as a string, so we use a template literal
   });
   console.log(`Logged in as ${client.user.username}`);
-
+});
   // .. rest of logging in here
-})
-```
+
+```  
 
 ## Command and Events Folder
 
@@ -67,7 +66,7 @@ module.exports = new CommandConstructor({
   ownerOnly: false, // optional
   category: 'fun',
   init: (client) => {
-    client.writeOnInfo = ({ result: `${this.name} was loaded.` });
+    client.writeOnInfo = ({ result: `${client.user.tag} was loaded.` });
   },
   run: async (message, args, client) => {
     message.reply('Pong.');
@@ -76,7 +75,7 @@ module.exports = new CommandConstructor({
 ```
 The three parameters that each command can take are:
 * `message`: Message
-* `args`: Command arguments after the command name [0]
+* `args`: Command arguments after your typical split/slice/join [0]
 * `client`: `instanceof @extends Client` (discord.js)
 
 ## Installation
