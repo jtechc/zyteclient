@@ -1,5 +1,9 @@
 # zyteclient
 
+### zyteclient is heavily based off a popular command handler named [CDCommands](https://github.com/CreativeDevelopments/CDCommands), by lead developer Exxxon.
+
+The following is meant to be a personal project.
+
 An annoyingly average discord.js command handler that is very work in progress.
 
 > ## Note
