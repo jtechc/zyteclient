@@ -109,7 +109,7 @@ class ZyteClient {
     }
 
     this._client.writeOnInfo({
-      result: `⚡ zytesasdch ⚡ - loaded ${this._client.commands.size} commands`,
+      result: `⚡ zyteclient ⚡ - loaded ${this._client.commands.size} commands`,
     });
   }
 
@@ -121,7 +121,7 @@ class ZyteClient {
     );
 
     this._client.writeOnInfo({
-      result: `⚡ zytesasdch ⚡ - loaded ${numberOfEvents} events`,
+      result: `⚡ zyteclient ⚡ - loaded ${numberOfEvents} events`,
     });
   }
 

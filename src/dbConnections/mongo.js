@@ -11,7 +11,7 @@ module.exports = async (mongoURI) => {
   },
     (e) => {
       if (e) throw e;
-      else console.log(`${colors.zebra('-DATABASE CONNECTED-')}`);
+      else console.log(`${colors.blue('-DATABASE CONNECTED-')}`);
     }
   );
 };
