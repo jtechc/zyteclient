@@ -17,7 +17,7 @@ module.exports = class EventConstructor {
    * @function
    * @param {zyteclient} client
    * @returns {Promise<any>}
-   * @type {(client: zyteclient, ...args: import('discord.js').ClientEvents[str]) => Promise<unknown>}
+   * @type {(client: zyteclient, ...args: import('discord.js').ClientEvents[str]) => Promise<unknown>};
    */
   run;
 
