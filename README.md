@@ -42,7 +42,7 @@ client.on('ready', () => {
     eventsDirectory: 'events',
     ownerId: [' '],
     prefix: '%',
-    mongoURI: `${process.env.MONGOURI}`,    // defined as a string, so we use a template literal
+    mongoURI: {process.env.MONGOURI},
   });
   console.log(`Logged in as ${client.user.username}`);
 });
