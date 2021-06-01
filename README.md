@@ -42,7 +42,7 @@ client.on('ready', () => {
     eventsDirectory: 'events',
     ownerId: [' '],
     prefix: '%',
-    mongoURI: {process.env.MONGOURI},
+    mongoURI: process.env.MONGOURI,
   });
   console.log(`Logged in as ${client.user.username}`);
 });
